@@ -4,7 +4,10 @@
 #msg()     
 
 def soma(a,b,c):
-    return (a-b)/c
+    if c != 0:
+        return (a+b)/c
+    else:
+        return 'Não é possível dividir por zero!'
 
 if __name__ == '__main__':
     a = float(input('Digite o valor de a: '))
