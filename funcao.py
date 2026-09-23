@@ -16,10 +16,18 @@ def soma(a, b, c):
 
 def quadrados(valor):
     resultado = []
-    for i in range(valor):
+    for i in valor:
         resultado.append(i ** 2)
+        sorted(resultado)
     return resultado
 
 if __name__ == '__main__':
-    valor = [2,56,3,1,-7]
-    print(f'Os quadrados dos números de 0 a {len(valor)-1} são: {quadrados(len(valor))}')
+    valor = [2,56,3,1,-7, 67, 3 , 566, -9999, 7, 4]
+    resultado = quadrados(valor)
+
+   
+    for numeros in resultado:
+        if numeros < 20:
+            print(f'O quadrado do numero {numeros} é menor que 20')
+
+        
