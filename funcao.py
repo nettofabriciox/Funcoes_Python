@@ -13,4 +13,4 @@ if __name__ == '__main__':
     a = float(input('Digite o valor de a: '))
     b = float(input('Digite o valor de b: '))
     c = float(input('Digite o valor de c: '))
-    print(soma(a, b, c))
+    print(f'O numero {a} somado com o numero {b} dividido pelo numero {c} é igual a {soma(a,b,c)}')
