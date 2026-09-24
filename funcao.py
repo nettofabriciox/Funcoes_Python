@@ -14,20 +14,30 @@ def soma(a, b, c):
   #  c = float(input('Digite o valor de c: '))
   #  print(f'O numero {a} somado com o numero {b} dividido pelo numero {c} é igual a {soma(a,b,c)}')
 
-def quadrados(valor):
-    resultado = []
-    for i in valor:
-        resultado.append(i ** 2)
-        sorted(resultado)
-    return resultado
+#def quadrados(valor):
+ #   resultado = []
+ #   for i in valor:
+      #  resultado.append(i ** 2)
+      #  sorted(resultado)
+  #  return resultado
+
+#def contar(num=11, caracter='*'):
+   # for i in range(1, num):
+       # print(caracter) 
+
+def square(n):
+    return n ** 2
+
 
 if __name__ == '__main__':
-    valor = [2,56,3,1,-7, 67, 3 , 566, -9999, 7, 4]
-    resultado = quadrados(valor)
 
-   
-    for numeros in resultado:
-        if numeros < 20:
-            print(f'O quadrado do numero {numeros} é menor que 20')
+    lista = [1, 2, 3, 4, 5]
+    for numeros in lista:
+        num = square(numeros)
+        print(f'O quadrado de {numeros} é {num}')
+
+        
+
+
 
         
